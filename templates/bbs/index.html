@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load custom %}
+
+{% block page-container %}
+    <div class="wrap-left">
+        {% for article in article_list %}
+            <div class="article-box row">
+                <div class="article-head-img col-md-4">
+                    <img src="/static/{{ article.head_img | truncate_url}}">
+                </div>
+                <div class="article-brief col-md-8">
+                    <a href="{% url 'article_detail' article.id %}" class="article-title">{{ article.title }}</a>
+                    <div class="article_brief-info">
+                        <span>
+                            {{ article.author.name }}
+                        </span>
+                        <span>
+                            {{ article.pub_date }}
+                        </span>
+                        <span>
+                            {% filter_comment article as comments %}
+                        </span>
+                        <span class="glyphicon glyphicon-comment"></span>
+                        {{ comments.comment_count }}
+                        <span class="glyphicon glyphicon-thumbs-up"></span>
+                        {{ comments.thumb_count }}
+                    </div>
+                    <div class="article-brief-text">
+                        <span>{{ article.brief }}</span>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        {% endfor %}
+    </div>
+    <div class="wrap-right">
+     看到这个话题，很多人会觉得我要把传统商业批判一番，以为我又是一个所谓“互联网思维”的鼓吹者，要讲什么免费模式、平台思维、社群营销和粉丝经济了。
+    </div>
+    <div class="clear-both"></div>
+
+{% endblock %}

@@ -1,0 +1,106 @@
+
+.page-container{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.wrap-left{
+    width: 75%;
+    float: left;
+}
+
+.wrap-right{
+    width: 25%;
+    float: left;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.clear-both{
+    clear: both;
+}
+
+.footer{
+    margin-top: 50px;
+    position: relative;
+    background-color: #2d3237;
+    padding-top: 5px;
+    min-width: 1170px;
+    z-index: 210;
+}
+
+.article-head-img img{
+    width: 220px;
+    height: 125px;
+}
+
+.article-box{
+    padding-bottom: 10px;
+}
+
+.article-brief{
+    margin-left: -10px;
+}
+
+.article-title{
+    font-size: 20px;
+}
+
+a{
+    color: #333;
+}
+
+
+a:hover{
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.body {
+    height: 100%;
+    color: rgb(51, 51, 51);
+    font-family: Arial, 微软雅黑, "Microsoft yahei", "Hiragino Sans GB", "冬青黑体简体中文 w3", "Microsoft Yahei", "Hiragino Sans GB", "冬青黑体简体中文 w3", STXihei, 华文细黑, SimSun, 宋体, Heiti, 黑体, sans-serif;
+}
+
+body{
+    min-height: 100%;
+    padding-top: 70px;
+}
+
+.article_brief-info{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #999;
+    line-height: 24px;
+}
+
+.article-brief-text{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #999;
+    line-height: 24px;
+}
+
+.article-title-bg{
+    font-size: 28px;
+    margin: 0;
+    position: inherit;
+    line-height: 1.5;
+    color: #333;
+}
+
+.article-title-brief{
+    color: #999;
+    margin-top: 10px;
+}
+
+.article-detail-img{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    width: 100%
+}
+
+p{
+    font-size: 16px;
+    line-height: 30px;
+}
